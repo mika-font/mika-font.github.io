@@ -1,0 +1,10 @@
+:root{
+    --cor-fundo: #202020;
+    --cor-destaque: #8a0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
