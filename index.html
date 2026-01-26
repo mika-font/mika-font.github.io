@@ -8,10 +8,11 @@
     <title>Mikael Fontoura - Portfólio</title>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="topbar">
+        <div class="container nav-wrapper">
+            <div class="brand">MF · Eng. Computação</div>
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#apresentacao">Apresentação</a></li>
                     <li><a href="#sobre-mim">Sobre Mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -24,33 +25,90 @@
     </header>
     <main>
         <!--Apresentação-->
-        <section id="apresentacao">
-            <h2>Mikael Fontoura</h2>
-            <p>Estudante de Engenharia de Computação na UFSM. Apaixonado por ciência, tecnologia e literatura.</p>
+        <section id="apresentacao" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Engenharia · Robótica · Ciência</p>
+                    <h1>Mikael Fontoura</h1>
+                    <p class="lead">Estudante de Engenharia de Computação na UFSM. Apaixonado por física, química, astronomia e literatura, além de curioso por compreender como o mundo funciona.</p>
+                    <div class="tags">
+                        <span class="tag">Robótica</span>
+                        <span class="tag">Algoritmos</span>
+                        <span class="tag">Ficção & RPG</span>
+                    </div>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#projetos">Ver projetos</a>
+                        <a class="btn ghost" href="#contato">Vamos conversar</a>
+                    </div>
+                </div>
+            </div>
+            <a class="scroll-hint" href="#sobre-mim">
+                <span>Role para explorar</span>
+                <span class="chevron">⌄</span>
+            </a>
         </section>
 
         <!--Sobre Mim-->
-        <section id="sobre-mim">
+        <section id="sobre-mim" class="panel">
             <h2>Sobre Mim</h2>
-            <p>Sou alguém que gosta de questionar o mundo ao meu redor. Minha jornada é marcada por uma curiosidade constante sobre como as coisas funcionam - desde os fenômenos físicos até a lógica por trás do código.</p>
-            <p><strong>Interesses Acadêmicos:</strong> Engenharia de Computação, Física, Química, Algoritmos</p>
-            <p><strong>Interesses Pessoais:</strong> Astronomia, Literatura (ficção, fantasia, suspense), RPG de mesa, cinema e séries (especialmente terror, ficção e suspense)</p>
-            <p><strong>Idiomas:</strong> Português (nativo), Inglês (aprendendo), Alemão e Italiano (planejado)</p>
-            <p>Acredito que a criatividade e a tecnologia, quando combinadas com curiosidade genuína, podem criar soluções incríveis.</p>
+            <div class="container">
+                <div class="col">
+                    <div class="profile-photo-container">
+                        <img src="assets/foto-perfil.jpg" alt="Foto de Mikael Fontoura" class="profile-photo">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about-text">
+                        <p>Sou alguém que gosta de questionar o mundo ao meu redor. Minha jornada é marcada por uma curiosidade constante sobre como as coisas funcionam - desde os fenômenos físicos até a lógica por trás do código.</p>
+                        <p><strong>Interesses Acadêmicos:</strong> Engenharia de Computação, Física, Química, Algoritmos</p>
+                        <p><strong>Interesses Pessoais:</strong> Astronomia, Literatura (ficção, fantasia, suspense), RPG de mesa, cinema e séries (especialmente terror, ficção e suspense)</p>
+                        <p><strong>Idiomas:</strong> Português (nativo), Inglês (aprendendo), Alemão e Italiano (planejado)</p>
+                        <p>Acredito que a criatividade e a tecnologia, quando combinadas com curiosidade genuína, podem criar soluções incríveis.</p>
+                    </div>
+                </div>
+            </div>                
         </section>
 
         <!--Projetos-->
-        <section id="projetos">
+        <section id="projetos" class="panel">
             <h2>Projetos</h2>
-            <ul>
-                <li><strong>Projeto 1:</strong> Descrição do projeto 1. <a href="link-do-projeto-1">Ver mais</a></li>
-                <li><strong>Projeto 2:</strong> Descrição do projeto 2. <a href="link-do-projeto-2">Ver mais</a></li>
-                <li><strong>Projeto 3:</strong> Descrição do projeto 3. <a href="link-do-projeto-3">Ver mais</a></li>
-            </ul>
+            <p>Espaço reservado para os projetos.</p>
+            <div class="card-grid">
+                <article class="card empty">
+                    <div class="card-header">
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot red"></span>
+                        <span class="tag small">Em breve</span>
+                    </div>
+                    <h3>Slot de projeto</h3>
+                    <p>Em breve</p>
+                </article>
+                <article class="card empty">
+                    <div class="card-header">
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot red"></span>
+                        <span class="tag small">Em breve</span>
+                    </div>
+                    <h3>Slot de projeto</h3>
+                    <p>Em breve</p>
+                </article>
+                <article class="card empty">
+                    <div class="card-header">
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot red"></span>
+                        <span class="tag small">Em breve</span>
+                    </div>
+                    <h3>Slot de projeto</h3>
+                    <p>Em breve</p>
+                </article>
+            </div>
         </section>
 
         <!--Habilidades-->
-        <section id="habilidades">
+        <section id="habilidades" class="panel">
             <h2>Habilidades Técnicas</h2>
             <h3>Programação</h3>
             <ul>
@@ -62,8 +120,8 @@
             <h3>Ferramentas & Tecnologias</h3>
             <ul>
                 <li>Git e controle de versão</li>
-                <li>Linux/Windows</li>
-                <li>VS Code e IDEs</li>
+                <li>Bootstrap</li>
+                <li>VS Code</li>
             </ul>
             <h3>Habilidades Complementares</h3>
             <ul>
@@ -75,7 +133,7 @@
         </section>
 
         <!--Experiência-->
-        <section id="experiencia">
+        <section id="experiencia" class="panel">
             <h2>Experiência</h2>
             <div>
                 <h3>Técnico em Informática</h3>
@@ -90,7 +148,7 @@
         </section>
 
         <!--Contato-->
-        <section id="contato">
+        <section id="contato" class="panel">
             <h2>Contato</h2>
             <p>Entre em contato comigo através do <a href="mailto:seu-email@example.com">e-mail</a> ou me siga no <a href="https://www.linkedin.com/in/mikael-fontoura-do-nascimento-6724a22b7">LinkedIn</a>.</p>
         </section>
